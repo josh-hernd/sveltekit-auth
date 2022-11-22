@@ -20,7 +20,13 @@ const usersData = [
         user: 'user@example.com',
         password: 'pass',
         userId: storeUserId
-    }]
+    },
+    {
+        user: 'user@iphone.com',
+        password: 'myiphone',
+        userId: storeUserId
+    }
+]
 
 export const GET: RequestHandler = async ({ params }) => {
     function filterUsers(userArray: [], val: string) {
